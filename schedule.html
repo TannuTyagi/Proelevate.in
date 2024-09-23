@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Meeting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="schedule-form">
+        <h2>Schedule a Meeting</h2>
+        <form id="meetingForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="mentor">Mentor</label>
+            <input type="text" id="mentor" name="mentor" readonly>
+
+            <label for="summary">Meeting Summary</label>
+            <textarea id="summary" name="summary" required placeholder="Enter meeting purpose" maxlength="100"></textarea>
+
+            <label for="time-slot">Select a Time Slot</label>
+            <select id="time-slot" name="time-slot" required>
+                <option value="" disabled selected>Select a time</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+            </select>
+
+            <button type="submit">Schedule Meeting</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

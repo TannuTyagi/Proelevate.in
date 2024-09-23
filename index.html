@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Find the Perfect Mentor</h1>
+        <p>Get expert guidance from professionals in various fields. Schedule a session now!</p>
+        <button onclick="goToSchedule()">Explore Mentors</button>
+    </header>
+
+    <section class="mentor-list">
+        <h2>Available Mentors</h2>
+        <div class="mentor-card">
+            <h3>Arsh Goyal</h3>
+            <p>Expert in Web Development, React.js, Node.js</p>
+            <button class="schedule-btn" onclick="goToSchedule('Arsh goyal')">Schedule Meeting</button>
+        </div>
+        <div class="mentor-card">
+            <h3>ABCD</h3>
+            <p>Data Scientist, Python, Machine Learning</p>
+            <button class="schedule-btn" onclick="goToSchedule('ABCD')">Schedule Meeting</button>
+        </div>
+        <!-- Add more mentor cards here -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
